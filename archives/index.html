@@ -19,7 +19,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>归档 - Resory</title>
+  <title>Archive - Resory</title>
   
 
   
@@ -510,6 +510,10 @@
         
           <h2>Resory</h2>
         
+        
+          <p><p>回忆吟挽，时光破晓。</p>
+</p>
+        
         <div id="binft"></div>
           <script>
             var binft = function (r) {
@@ -531,7 +535,7 @@
               c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
             }
             var l = "",
-            o = ["回忆吟挽，时光破晓。", "仰望星空的人，最终归于星空。", "Never fail the dream of sky."].map(function (r) {
+            o = ["回忆吟挽，时光破晓。", "仰望星空的人，最终归于星空。", "Never fail the dream of sky.", "梦开始的地方，即为故乡。"].map(function (r) {
             return r + ""
             }),
             a = 2,
@@ -738,9 +742,9 @@
       
     
       
-        本站使用
+        Use
         <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.0.0" target="_blank" class="codename">Volantis</a>
-        作为主题
+        as theme
       
     
       
@@ -1368,5 +1372,5 @@ const ROOT =  ("/blog/" || "/").endsWith('/') ? ("/blog/" || "/") : ("/blog//" |
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 <!--script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script-->
-<script src="/blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/blog/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
