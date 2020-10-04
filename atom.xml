@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Resory</title>
+  
+  
+  <link href="https://resorie.github.io/blog/atom.xml" rel="self"/>
+  
+  <link href="https://resorie.github.io/blog/"/>
+  <updated>2020-10-03T05:50:21.974Z</updated>
+  <id>https://resorie.github.io/blog/</id>
+  
+  <author>
+    <name>Sya Resory</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>浅谈珂朵莉树（ODT）</title>
+    <link href="https://resorie.github.io/blog/posts/about-ODT/"/>
+    <id>https://resorie.github.io/blog/posts/about-ODT/</id>
+    <published>2020-10-03T05:44:09.000Z</published>
+    <updated>2020-10-03T05:50:21.974Z</updated>
+    
+    
+    
+    
+    <category term="编程" scheme="https://resorie.github.io/blog/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    <category term="数据结构" scheme="https://resorie.github.io/blog/categories/%E7%BC%96%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+    <category term="OI" scheme="https://resorie.github.io/blog/tags/OI/"/>
+    
+    <category term="数据结构" scheme="https://resorie.github.io/blog/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+</feed>
