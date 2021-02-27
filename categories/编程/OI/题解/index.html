@@ -19,7 +19,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>归档：2020/12 - Resory</title>
+  <title>分类：题解 - Resory</title>
   
 
   
@@ -443,14 +443,14 @@
  
 <script> 
   // 处理封面 此时 jquery 还没加载 
-  if ("half" == "none") { // 移除封面 
+  if ("none" == "none") { // 移除封面 
     document.getElementsByClassName('cover-wrapper')[0].style.display = "none"; 
     document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show"); 
   } else { 
-    if ("half" == "half") { // 半屏 
+    if ("none" == "half") { // 半屏 
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'half'); 
       document.getElementsByClassName('scroll-down')[0].style.display = "none"; 
-    } else if ("half" == "full") { // 全屏 
+    } else if ("none" == "full") { // 全屏 
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'full'); 
       document.getElementsByClassName('scroll-down')[0].style.display = ""; 
     } 
@@ -463,9 +463,11 @@
         
         
 
+
 <div class='l_main'>
-	
-		
+  
+    
+      
   <section class="post-list">
     
       
@@ -485,29 +487,29 @@
   
     
     <h2 class="article-title" >
-      <a href="/blog/posts/about-kmp/">
-        浅谈KMP算法
+      <a href="/blog/posts/soln-P4774/">
+        【题解】[NOI2018]屠龙勇士
       </a>
     </h2>
   
   <div class='md'>
     
-      <p>$\text{KMP}$ 算法是一种<span class='p red'>单模式串匹配算法</span>，由 $\mathsf{D.E.Knuth}$、$\mathsf{J.H.Morris}$ 和 $\mathsf{V.R.Pratt}$ 在 1977 年共同提出，可以在 $\Theta(n+m)$ 的时间复杂度内实现单个模式串的匹配。</p>
+      <p>[NOI2018]屠龙勇士 题解</p>
     
   </div>
   
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time>2020-12-26</time>
+        <time>2020-10-08</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/blog/categories/%E7%BC%96%E7%A8%8B/">编程</a><span class="sep"></span><a class="category-link" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/">OI</a><span class="sep"></span><a class="category-link" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E5%AD%97%E7%AC%A6%E4%B8%B2/">字符串</a>
+          <a class="category-link" href="/blog/categories/%E7%BC%96%E7%A8%8B/">编程</a><span class="sep"></span><a class="category-link" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/">OI</a><span class="sep"></span><a class="category-link" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E9%A2%98%E8%A7%A3/">题解</a>
         
       </div>
       
         <div>
-          <a class='readmore' href='/blog/posts/about-kmp/'>
+          <a class='readmore' href='/blog/posts/soln-P4774/'>
             阅读全文
           </a>
         </div>
@@ -527,7 +529,8 @@
   
 
 
-	
+    
+  
 </div>
 <aside class='l_side'>
   

@@ -19,7 +19,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>分类：数据结构 - Resory</title>
+  <title>归档：2021 - Resory</title>
   
 
   
@@ -443,14 +443,14 @@
  
 <script> 
   // 处理封面 此时 jquery 还没加载 
-  if ("none" == "none") { // 移除封面 
+  if ("half" == "none") { // 移除封面 
     document.getElementsByClassName('cover-wrapper')[0].style.display = "none"; 
     document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show"); 
   } else { 
-    if ("none" == "half") { // 半屏 
+    if ("half" == "half") { // 半屏 
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'half'); 
       document.getElementsByClassName('scroll-down')[0].style.display = "none"; 
-    } else if ("none" == "full") { // 全屏 
+    } else if ("half" == "full") { // 全屏 
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'full'); 
       document.getElementsByClassName('scroll-down')[0].style.display = ""; 
     } 
@@ -463,11 +463,9 @@
         
         
 
-
 <div class='l_main'>
-  
-    
-      
+	
+		
   <section class="post-list">
     
       
@@ -487,29 +485,29 @@
   
     
     <h2 class="article-title" >
-      <a href="/blog/posts/about-ODT/">
-        浅谈珂朵莉树（ODT）
+      <a href="/blog/posts/about-asr-simpson/">
+        浅谈自适应辛普森法
       </a>
     </h2>
   
   <div class='md'>
     
-      <p>珂朵莉树（ODT）是一种玄学数据结构，得名于<a target="_blank" rel="noopener" href="https://codeforces.ml/problemset/problem/896/C">Codeforces 896 C</a>，可以在较快的时间复杂度内实现区间赋值和区间修改等操作。</p>
+      <p>自适应辛普森法是一种可以在较快时间内求解定区间数值积分的算法，其思想为将这个定区间内的函数分段并近似为二次函数进行求值。</p>
     
   </div>
   
     <div class='meta-v3' line_style='solid'>
       <div>
         
-        <time>2020-10-03</time>
+        <time>2021-02-27</time>
         
           <span class="dot"></span>
-          <a class="category-link" href="/blog/categories/%E7%BC%96%E7%A8%8B/">编程</a><span class="sep"></span><a class="category-link" href="/blog/categories/%E7%BC%96%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a>
+          <a class="category-link" href="/blog/categories/%E7%BC%96%E7%A8%8B/">编程</a><span class="sep"></span><a class="category-link" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/">OI</a><span class="sep"></span><a class="category-link" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E6%95%B0%E5%AD%A6/">数学</a>
         
       </div>
       
         <div>
-          <a class='readmore' href='/blog/posts/about-ODT/'>
+          <a class='readmore' href='/blog/posts/about-asr-simpson/'>
             阅读全文
           </a>
         </div>
@@ -529,8 +527,7 @@
   
 
 
-    
-  
+	
 </div>
 <aside class='l_side'>
   
@@ -626,21 +623,31 @@
           <li><a class="flat-box"
             title="/blog/categories/%E7%BC%96%E7%A8%8B/" href="/blog/categories/%E7%BC%96%E7%A8%8B/"
             id="blogcategoriesE7BC96E7A88B"
-            ><div class='name'>编程</div><div class='badge'>(3)</div></a></li>
+            ><div class='name'>编程</div><div class='badge'>(4)</div></a></li>
         
           <li><a class="flat-box child"
-            title="/blog/categories/%E7%BC%96%E7%A8%8B/%E5%AD%97%E7%AC%A6%E4%B8%B2/" href="/blog/categories/%E7%BC%96%E7%A8%8B/%E5%AD%97%E7%AC%A6%E4%B8%B2/"
-            id="blogcategoriesE7BC96E7A88BE5AD97E7ACA6E4B8B2"
+            title="/blog/categories/%E7%BC%96%E7%A8%8B/OI/" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/"
+            id="blogcategoriesE7BC96E7A88BOI"
+            ><div class='name'>OI</div><div class='badge'>(4)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E5%AD%97%E7%AC%A6%E4%B8%B2/" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E5%AD%97%E7%AC%A6%E4%B8%B2/"
+            id="blogcategoriesE7BC96E7A88BOIE5AD97E7ACA6E4B8B2"
             ><div class='name'>字符串</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box child"
-            title="/blog/categories/%E7%BC%96%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" href="/blog/categories/%E7%BC%96%E7%A8%8B/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"
-            id="blogcategoriesE7BC96E7A88BE695B0E68DAEE7BB93E69E84"
+            title="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E6%95%B0%E5%AD%A6/" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E6%95%B0%E5%AD%A6/"
+            id="blogcategoriesE7BC96E7A88BOIE695B0E5ADA6"
+            ><div class='name'>数学</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"
+            id="blogcategoriesE7BC96E7A88BOIE695B0E68DAEE7BB93E69E84"
             ><div class='name'>数据结构</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box child"
-            title="/blog/categories/%E7%BC%96%E7%A8%8B/%E9%A2%98%E8%A7%A3/" href="/blog/categories/%E7%BC%96%E7%A8%8B/%E9%A2%98%E8%A7%A3/"
-            id="blogcategoriesE7BC96E7A88BE9A298E8A7A3"
+            title="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E9%A2%98%E8%A7%A3/" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E9%A2%98%E8%A7%A3/"
+            id="blogcategoriesE7BC96E7A88BOIE9A298E8A7A3"
             ><div class='name'>题解</div><div class='badge'>(1)</div></a></li>
         
       </ul>

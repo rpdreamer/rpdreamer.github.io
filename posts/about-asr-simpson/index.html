@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta name="renderer" content="webkit">
@@ -19,9 +17,13 @@
 
   <!-- 页面元数据 -->
   
-  <title>归档：2020/12 - Resory</title>
+  <title>浅谈自适应辛普森法 - Resory</title>
+  
+    <meta name="keywords" content="OI">
   
 
+  
+    <meta name="description" content="自适应辛普森法是一种可以在较快时间内求解定区间数值积分的算法，其思想为将这个定区间内的函数分段并近似为二次函数进行求值。">
   
 
   <!-- feed -->
@@ -381,7 +383,7 @@
   
     
     
-        <div class='cover-wrapper  dock' style="display: none;">
+        <div class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/resorie/images@master/abc.jpg"></div>
           
@@ -433,8 +435,8 @@
  
  
 <div id="pjax-data" style="display: none"> 
-  <div id="pjax-ispage">false</div> 
-  <div id="pjax-pageTitle"></div> 
+  <div id="pjax-ispage">true</div> 
+  <div id="pjax-pageTitle">浅谈自适应辛普森法</div> 
   <div id="pjax-enable-cover">true</div> 
   <div id="pjax-comment-path"></div> 
   <div id="pjax-comment-placeholder"></div> 
@@ -443,14 +445,14 @@
  
 <script> 
   // 处理封面 此时 jquery 还没加载 
-  if ("half" == "none") { // 移除封面 
+  if ("none" == "none") { // 移除封面 
     document.getElementsByClassName('cover-wrapper')[0].style.display = "none"; 
     document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show"); 
   } else { 
-    if ("half" == "half") { // 半屏 
+    if ("none" == "half") { // 半屏 
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'half'); 
       document.getElementsByClassName('scroll-down')[0].style.display = "none"; 
-    } else if ("half" == "full") { // 全屏 
+    } else if ("none" == "full") { // 全屏 
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'full'); 
       document.getElementsByClassName('scroll-down')[0].style.display = ""; 
     } 
@@ -464,70 +466,353 @@
         
 
 <div class='l_main'>
-	
-		
-  <section class="post-list">
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+  <div class="article-meta" id="top">
     
       
+
+  
+    <meting-js
+      mini='true'
+      volume='0.7'
+      loop='all'
+      order='list'
+      server='netease'
+      type='playlist'
+      id='5268396869'>
+    </meting-js>
+  
+
+
+    
+    
+    
+      <h1 class="title">
+        浅谈自适应辛普森法
+      </h1>
+      <div class='new-meta-box'>
         
           
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>Resory</p>
+  </a>
+</div>
+
+          
         
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/blog/posts/about-kmp/">
-        浅谈KMP算法
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>$\text{KMP}$ 算法是一种<span class='p red'>单模式串匹配算法</span>，由 $\mathsf{D.E.Knuth}$、$\mathsf{J.H.Morris}$ 和 $\mathsf{V.R.Pratt}$ 在 1977 年共同提出，可以在 $\Theta(n+m)$ 的时间复杂度内实现单个模式串的匹配。</p>
-    
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/blog/categories/%E7%BC%96%E7%A8%8B/">编程</a><span class="sep"></span><a class="category-link" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/">OI</a><span class="sep"></span><a class="category-link" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E6%95%B0%E5%AD%A6/">数学</a>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+
+
+          
         
-        <time>2020-12-26</time>
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2021年2月27日</p>
+  </a>
+</div>
+
+          
         
-          <span class="dot"></span>
-          <a class="category-link" href="/blog/categories/%E7%BC%96%E7%A8%8B/">编程</a><span class="sep"></span><a class="category-link" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/">OI</a><span class="sep"></span><a class="category-link" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E5%AD%97%E7%AC%A6%E4%B8%B2/">字符串</a>
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="浅谈自适应辛普森法" data-path="/blog/posts/about-asr-simpson/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  <p>自适应辛普森法是一种可以在较快时间内求解定区间数值积分的算法，其思想为将这个定区间内的函数分段并近似为二次函数进行求值。</p>
+<a id="more"></a>
+<h2 id="1-辛普森公式"><a href="#1-辛普森公式" class="headerlink" title="1. 辛普森公式"></a>1. 辛普森公式</h2><p>辛普森公式可以为一个二次函数求解定积分。</p>
+<p>对于一个二次函数 $f(x)$，有：</p>
+<script type="math/tex; mode=display">
+\int_L^R f(x)\ \mathrm{d}x=\dfrac{(R-L)(f(L)+4f(\frac{L+R}{2})+f(R))}{6}</script><p>证明：</p>
+<p>设 $f(x)=Ax^2+Bx+C$，则有 $g(x)=\dfrac{A}{3}x^3+\dfrac{B}{2}x^2+Cx$ 使得 $g’(x)=f(x)$。</p>
+<p>因此原式可化为：</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\int_L^R f(x)\ \mathrm{d}x= &\ g(R)-g(L) \\
+= &\ (\dfrac{A}{3}R^3+\dfrac{B}{2}R^2+CR)-(\dfrac{A}{3}L^3+\dfrac{B}{2}L^2+CL)\\
+= &\ \dfrac{A}{3}(R^3-L^3)+\dfrac{B}{2}(R^2-L^2)+C(R-L) \\
+= &\ (R-L)(\frac{A}{3}(L^2+LR+R^2)+\frac{B}{2}(L+R)+C) \\
+= &\ \dfrac{(R-L)(2A(L^2+LR+R^2)+3B(L+R)+6C}{6} \\
+= &\ \dfrac{(R-L)(2AL^2+2ALR+2AR^2+3BL+3BR+6C}{6} \\
+= &\ \dfrac{(R-L)((AL^2+BL+C)+(AR^2+BL+C)+4(\frac{1}{4}A(L+R)^2+\frac{1}{2}B(L+R)+C)}{6} \\
+= &\ \dfrac{(R-L)(f(L)+f(R)+4f(\frac{L+R}{2}))}{6}
+\end{aligned}</script><h2 id="2-普通辛普森法"><a href="#2-普通辛普森法" class="headerlink" title="2. 普通辛普森法"></a>2. 普通辛普森法</h2><p>该方法在1743年发表于托马斯·辛普森的一篇论文中。方法如下：</p>
+<p>给定一个正整数 $n$，将区间 $[l,r]$ 分成 $2n$ 个子区间，则两个区间的空隙为 $h=\dfrac{r-l}{2n}$，第 $i$ 个区间的结束点为 $p_i=l+h\cdot i$（为方便计算，令 $p_0=l$）。</p>
+<p>接着对于 $i\in[1,n]$，依次用二次函数对 $[p_{2i-2)},p_{2i}]$ 区间内的函数值取近似，则此段内的积分值约为 $\dfrac{h(f(p_{2i-2})+4f(p_{2i-1})+f(p_{2i}))}{3}$。</p>
+<p>则可算出积分值约为：</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\int_L^R f(x)\ \mathrm{d}x \approx &\ \sum_{i=1}^n \dfrac{h(f(p_{2i-2})+4f(p_{2i-1})+f(p_{2i}))}{3}\\
+= &\ \dfrac{h}{3}(f(p_0)+4f(p_1)+2f(p_2)+\dots+2f(p_{2n-2})+4f(p_{2n-1})+f(p_{2n})) \\
+= &\ \dfrac{h}{3}(f(L)+f(R)+4(f(p_1)+f(p_3)+\dots+f(p_{2n-1})+2(f(p_2)+f(p_4)+\dots+f(p_{2n})))
+\end{aligned}</script><details cyan><summary> 查看代码 </summary>
+              <div class='content'>
+              <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">simple_simpson</span><span class="params">(<span class="keyword">double</span> l,<span class="keyword">double</span> r,<span class="keyword">int</span> n = <span class="number">1e6</span>)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">double</span> h = (r - l) / (n * <span class="number">2.0</span>);</span><br><span class="line">    <span class="keyword">double</span> ans = f(l)+f(r);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>;i &lt; <span class="number">2</span> * n;i ++) &#123;</span><br><span class="line">        <span class="keyword">double</span> p = l + h * i;</span><br><span class="line">        ans += f(p) * ((i &amp; <span class="number">1</span>) + <span class="number">1</span>) * <span class="number">2.0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans * h / <span class="number">3.0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+              </div>
+            </details>
+<p>普通辛普森法的误差约为 $-\frac{1}{90}(\frac{r-l}{2})^5f^4(\xi)$，其中 $l \le \xi \le r$。</p>
+<h2 id="3-自适应辛普森法"><a href="#3-自适应辛普森法" class="headerlink" title="3. 自适应辛普森法"></a>3. 自适应辛普森法</h2><p>很明显，普通辛普森法的时间和精度受限于 $n$ 的大小，这使得我们不能很好控制计算结果的效率和精度。</p>
+<p>考虑设计一个可以自我调节精度的算法，当二次函数足够接近原函数值时直接返回，否则将区间分割为左右两部分，递归重复此过程。</p>
+<p>注意到，如果区间直接代入公式算出的结果与左右两边代入公式算出结果之和相差不大时，这段函数可以近似认为是二次函数而直接返回。</p>
+<p>这就是自适应辛普森法的思想。</p>
+<details cyan><summary> 查看代码 </summary>
+              <div class='content'>
+              <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">simpson</span><span class="params">(<span class="keyword">double</span> l,<span class="keyword">double</span> r)</span> </span>&#123; <span class="comment">// 辛普森公式</span></span><br><span class="line">    <span class="keyword">return</span> (r - l) * (f(l) + <span class="number">4</span> * f((l + r) / <span class="number">2</span>) + f(r)) / <span class="number">6</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">asr</span><span class="params">(<span class="keyword">double</span> l,<span class="keyword">double</span> r,<span class="keyword">double</span> eps,<span class="keyword">double</span> A)</span> </span>&#123; <span class="comment">// A为已经代入公式算出的积分值</span></span><br><span class="line">    <span class="keyword">double</span> mid = (l + r) / <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">double</span> L = simpson(l,mid),R = simpson(mid,r);</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">fabs</span>(L + R - A) &lt;= <span class="number">15</span> * eps) <span class="keyword">return</span> L + R + (L + R - A) / <span class="number">15</span>; <span class="comment">// 校正精度，直接返回</span></span><br><span class="line">    <span class="keyword">return</span> asr(l,mid,eps / <span class="number">2</span>,L) + asr(mid,r,eps / <span class="number">2</span>,R); <span class="comment">//分治</span></span><br><span class="line">    <span class="comment">// 此代码中加上了分治eps的过程，但是实际做题中有时可以省略</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">double</span> <span class="title">solve</span><span class="params">(<span class="keyword">double</span> l,<span class="keyword">double</span> r)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> asr(l,r,eps,simpson(l,r));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+              </div>
+            </details>
+<h2 id="4-例题"><a href="#4-例题" class="headerlink" title="4. 例题"></a>4. 例题</h2><h3 id="1-洛谷P4525-【模板】自适应辛普森法1"><a href="#1-洛谷P4525-【模板】自适应辛普森法1" class="headerlink" title="1. 洛谷P4525 【模板】自适应辛普森法1"></a>1. 洛谷P4525 【模板】自适应辛普森法1</h3><div class="note quote"><p>给定 $a,b,c,d,L,R$，计算 $\int_L^R \dfrac{cx+d}{ax+b} \mathrm{d}x$，结果保留至小数点后 $6$ 位。</p></div>
+<p>模板题，直接套上模板即可。</p>
+<details cyan><summary> 查看代码 </summary>
+              <div class='content'>
+              <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">double</span> D;</span><br><span class="line"><span class="keyword">const</span> D eps = <span class="number">1e-7</span>;</span><br><span class="line"></span><br><span class="line">D a,b,c,d,l,r;</span><br><span class="line"></span><br><span class="line"><span class="function">D <span class="title">f</span><span class="params">(D x)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (c * x + d) / (a * x + b);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">D <span class="title">simpson</span><span class="params">(D l,D r)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (r - l) * (f(l) + <span class="number">4</span> * f((l + r) / <span class="number">2</span>) + f(r)) / <span class="number">6</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">D <span class="title">asr</span><span class="params">(D l,D r,D A)</span> </span>&#123;</span><br><span class="line">    D mid = (l + r) / <span class="number">2</span>;</span><br><span class="line">    D L = simpson(l,mid),R = simpson(mid,r);</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">fabs</span>(L + R - A) &lt;= <span class="number">15</span> * eps) <span class="keyword">return</span> L + R + (L + R - A) / <span class="number">15</span>;</span><br><span class="line">    <span class="keyword">return</span> asr(l,mid,L) + asr(mid,r,R);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">D <span class="title">solve</span><span class="params">(D l,D r)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> asr(l,r,simpson(l,r));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%lf%lf%lf%lf%lf%lf&quot;</span>,&amp;a,&amp;b,&amp;c,&amp;d,&amp;l,&amp;r);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%.6lf\n&quot;</span>,solve(l,r));</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+              </div>
+            </details>
+<h3 id="2-洛谷P45256【模板】自适应辛普森法2"><a href="#2-洛谷P45256【模板】自适应辛普森法2" class="headerlink" title="2. 洛谷P45256【模板】自适应辛普森法2"></a>2. 洛谷P45256【模板】自适应辛普森法2</h3><div class="note quote"><p>给定 $a(a \le 50)$，计算 $\int_0^\infty x^{\frac{a}{x}-x} \mathrm{d}x$，结果保留至小数点后 $5$ 位。若积分发散，输出 $\text{orz}$。</p></div>
+<p>在 $\text{desmos}$ 上画个图之后，可以注意到原函数当 $a&lt;0$ 时发散，而当 $a \ge 0,x\ge 15$ 时，原函数的值已无限趋近于 $0$，可以忽略不计。因此可以利用此性质将原积分化为 $\int_{eps}^{15} x^{\frac{a}{x}-x} \mathrm{d}x$（$x$ 不能取 $0$，因此从 $eps$ 开始计算积分）。</p>
+<details cyan><summary> 查看代码 </summary>
+              <div class='content'>
+              <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">double</span> D;</span><br><span class="line"><span class="keyword">const</span> D eps = <span class="number">1e-7</span>;</span><br><span class="line"></span><br><span class="line">D a;</span><br><span class="line"></span><br><span class="line"><span class="function">D <span class="title">f</span><span class="params">(D x)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">pow</span>(x,a / x - x);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">D <span class="title">simpson</span><span class="params">(D l,D r)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> (r - l) * (f(l) + <span class="number">4</span> * f((l + r) / <span class="number">2</span>) + f(r)) / <span class="number">6</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">D <span class="title">asr</span><span class="params">(D l,D r,D A)</span> </span>&#123;</span><br><span class="line">    D mid = (l + r) / <span class="number">2</span>;</span><br><span class="line">    D L = simpson(l,mid),R = simpson(mid,r);</span><br><span class="line">    <span class="keyword">if</span>(<span class="built_in">fabs</span>(L + R - A) &lt;= <span class="number">15</span> * eps) <span class="keyword">return</span> L + R + (L + R - A) / <span class="number">15</span>;</span><br><span class="line">    <span class="keyword">return</span> asr(l,mid,L) + asr(mid,r,R);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">D <span class="title">solve</span><span class="params">(D l,D r)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> asr(l,r,simpson(l,r));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%lf&quot;</span>,&amp;a);</span><br><span class="line">    <span class="keyword">if</span>(a &lt; <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="built_in">puts</span>(<span class="string">&quot;orz&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%.5lf\n&quot;</span>,solve(eps,<span class="number">15</span>));</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+              </div>
+            </details>
+  
+  
+    
+    <div class='footer'>
+      <div style="text-align:center; color: #FF5733; font-size:16px;">-------------EOF-------------</div>
       
-        <div>
-          <a class='readmore' href='/blog/posts/about-kmp/'>
-            阅读全文
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>📚 本文由<a href="https://resorie.github.io/">Resory</a>创作，转载请注明出处</p>
+
+              
+            
+              
+                <p>🧾 博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>🔗本文永久链接是：<a href=https://resorie.github.io/blog/posts/about-asr-simpson/>https://resorie.github.io/blog/posts/about-asr-simpson/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-02-27T23:47:37+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2021年2月27日</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
-    
-  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/blog/tags/OI/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>OI</p></a></div>
 
 
-	
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://resorie.github.io/blog/posts/about-asr-simpson/&title=浅谈自适应辛普森法 - Resory&summary=自适应辛普森法是一种可以在较快时间内求解定区间数值积分的算法，其思想为将这个定区间内的函数分段并近似为二次函数进行求值。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://resorie.github.io/blog/posts/about-asr-simpson/&title=浅谈自适应辛普森法 - Resory&summary=自适应辛普森法是一种可以在较快时间内求解定区间数值积分的算法，其思想为将这个定区间内的函数分段并近似为二次函数进行求值。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://resorie.github.io/blog/posts/about-asr-simpson/&title=浅谈自适应辛普森法 - Resory&summary=自适应辛普森法是一种可以在较快时间内求解定区间数值积分的算法，其思想为将这个定区间内的函数分段并近似为二次函数进行求值。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/blog/posts/about-kmp/'>
+          <p class='title'>浅谈KMP算法<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>$\text{KMP}$ 算法是一种单模式串匹配算法，由 $\mathsf{D.E.Knuth}$、$\mathsf{J.H.Morris}$ 和 $\mathsf{V.R.Pratt}$ 在 ...</p>
+        </a>
+      
+    </div>
+  
+</article>
+
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+    <!-- valine 添加一言 -->
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    jinrishici.load(function(result) {
+    var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+    document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
+    });
+  </script>
+</div>
+
+  </article>
+
+
+
+
+
+  <script>
+  // https://github.com/theme-next/hexo-theme-next/blob/master/layout/_third-party/math/mathjax.swig
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.0/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    // 文章章节标题不能为 “MathJax” ，否则会报错。
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -535,154 +820,28 @@
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box circle' href='/blog/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/resorie/images@master/avatar.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>Resory</h2>
-        
-        <div id="binft" align="center"></div>
-        <script src="https://cdn.jsdelivr.net/gh/resorie/dotfiles@master/scripts/colorful_text.js"></script>
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/blog/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/blog/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-    <div align="center">
-      <canvas id="canvasDiyBlock" style="width:60%;" height="100" width="700">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
-      <script src="https://cdn.jsdelivr.net/gh/resorie/dotfiles@master/scripts/clock.js"></script>
-    </div>
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/blog/categories/%E7%BC%96%E7%A8%8B/" href="/blog/categories/%E7%BC%96%E7%A8%8B/"
-            id="blogcategoriesE7BC96E7A88B"
-            ><div class='name'>编程</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/blog/categories/%E7%BC%96%E7%A8%8B/OI/" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/"
-            id="blogcategoriesE7BC96E7A88BOI"
-            ><div class='name'>OI</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E5%AD%97%E7%AC%A6%E4%B8%B2/" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E5%AD%97%E7%AC%A6%E4%B8%B2/"
-            id="blogcategoriesE7BC96E7A88BOIE5AD97E7ACA6E4B8B2"
-            ><div class='name'>字符串</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E6%95%B0%E5%AD%A6/" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E6%95%B0%E5%AD%A6/"
-            id="blogcategoriesE7BC96E7A88BOIE695B0E5ADA6"
-            ><div class='name'>数学</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"
-            id="blogcategoriesE7BC96E7A88BOIE695B0E68DAEE7BB93E69E84"
-            ><div class='name'>数据结构</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E9%A2%98%E8%A7%A3/" href="/blog/categories/%E7%BC%96%E7%A8%8B/OI/%E9%A2%98%E8%A7%A3/"
-            id="blogcategoriesE7BC96E7A88BOIE9A298E8A7A3"
-            ><div class='name'>题解</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E8%BE%9B%E6%99%AE%E6%A3%AE%E5%85%AC%E5%BC%8F"><span class="toc-text">1. 辛普森公式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%99%AE%E9%80%9A%E8%BE%9B%E6%99%AE%E6%A3%AE%E6%B3%95"><span class="toc-text">2. 普通辛普森法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E8%87%AA%E9%80%82%E5%BA%94%E8%BE%9B%E6%99%AE%E6%A3%AE%E6%B3%95"><span class="toc-text">3. 自适应辛普森法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E4%BE%8B%E9%A2%98"><span class="toc-text">4. 例题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%B4%9B%E8%B0%B7P4525-%E3%80%90%E6%A8%A1%E6%9D%BF%E3%80%91%E8%87%AA%E9%80%82%E5%BA%94%E8%BE%9B%E6%99%AE%E6%A3%AE%E6%B3%951"><span class="toc-text">1. 洛谷P4525 【模板】自适应辛普森法1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%B4%9B%E8%B0%B7P45256%E3%80%90%E6%A8%A1%E6%9D%BF%E3%80%91%E8%87%AA%E9%80%82%E5%BA%94%E8%BE%9B%E6%99%AE%E6%A3%AE%E6%B3%952"><span class="toc-text">2. 洛谷P45256【模板】自适应辛普森法2</span></a></li></ol></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/blog/tags/OI/" style="font-size: 14px; color: #999">OI</a>
-    </div>
-  </section>
-
-
-  
 
   
 
 
 </aside>
+
 
 
         
